@@ -3,6 +3,16 @@ html {
   font-size: 14px;
 }
 
+/* font styling */
+.featured,
+.projects,
+.trouble,
+nav ul li,
+.jumbotron p,
+.jumbotron a {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* navbar section */
 nav .container-fluid{
   align-items: center;
@@ -14,7 +24,6 @@ nav .navbar-brand {
 }
 
 nav ul li {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -48,11 +57,6 @@ nav ul li {
   font-size: 7.1rem;
 }
 
-.jumbotron p,
-.jumbotron a {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .jumbotron .container-fluid {
   align-items: center;
   display: flex;
@@ -60,7 +64,8 @@ nav ul li {
   margin: 11.85rem 0;
 }
 
-.jumbotron .btn-primary {
+.jumbotron .btn-primary,
+.trouble .btn-primary {
   background-color: #399bd1;
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
   padding: 1.3rem 0;
@@ -68,25 +73,24 @@ nav ul li {
   width: 11.4rem;
 }
 
-.jumbotron .btn-primary:hover {
+.jumbotron .btn-primary:hover,
+.trouble .btn-primary:hover {
   box-shadow: 0 0 12px rgba(0,0,0,0.9);
 }
 
-.jumbotron .btn-primary:active {
+.jumbotron .btn-primary:active,
+.trouble .btn-primary:active {
   box-shadow: 0 0 0 rgba(0,0,0,0.5);
 }
 
-/* Featured project section */
-.featured,
-.projects {
-  font-family: "Open Sans", sans-serif;
-}
+/* Featured project and projects sections */
 
 .featured h2,
 .projects h2 {
   color: #399bd1;
   font-size: 1.7rem;
   font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 .featured h4,
@@ -104,10 +108,36 @@ nav ul li {
 }
 
 .image-container img{
-  height: auto;
+  opacity: 0.7;
   width: 100%;
 }
 
 .product-categories {
   color: #399bd1;
+}
+
+.projects {
+  margin-bottom: 5.85rem;
+}
+
+/* having trouble section */
+.trouble {
+  align-items: center;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  padding: 5.2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.trouble h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+.trouble p {
+  margin-bottom: 2rem;
+  width: 42rem;
 }
