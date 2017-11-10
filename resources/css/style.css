@@ -83,6 +83,16 @@ nav ul li {
   box-shadow: 0 0 0 rgba(0,0,0,0.5);
 }
 
+@media only screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+
+  .jumbotron-text {
+    width: 100%;
+  }
+}
+
 /* Featured project and projects sections */
 
 .featured h2,
@@ -140,4 +150,10 @@ nav ul li {
 .trouble p {
   margin-bottom: 2rem;
   width: 42rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .trouble p {
+    width: 100%;
+  }
 }
